@@ -14,6 +14,12 @@ use Doctrine\Common\Collections\ArrayCollection;
 class Ad
 {
     /**
+    * @ORM\ManyToOne(targetEntity="Category", inversedBy="ad")
+    * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+    */
+    private $category;
+
+    /**
     *@ORM\ManyToOne(targetEntity="User", inversedBy="ad")
     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
     */

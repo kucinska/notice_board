@@ -15,23 +15,5 @@ class DefaultController extends Controller
     {
         return $this->render('CodersLabBundle:Default:index.html.twig');
     }
-	
-	/**
-     * @Route("/register", name="register")
-     */
-	public function registerAction(){
-		return $this->render('CodersLabBundle:Form:UserType.php');
-	}
-	/**
-     * @Route("/login", name="login")
-     */
-	public function loginAction(){
-		return 0;
-	}
-	/**
-	* @Route("/remindPassword", name="remindPassword")
-	*/
-	public function remindPasswordAction(){
-		return 0;
-	}
+
 }
